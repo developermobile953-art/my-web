@@ -1,0 +1,84 @@
+# ============================================================
+# Maosa Tech Web Services — Apache configuration
+# ============================================================
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect visitors from .html URLs to clean URLs (301 SEO-friendly redirects).
+# Example: /about.html -> /about
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L,NE]
+
+# Make /index.html resolve to the homepage URL.
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Internally serve the matching .html file when a clean URL is requested.
+# Example: /about -> /about.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [END]
+
+
+# Force HTTPS (uncomment when SSL is active)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove trailing slash (optional, keep clean URLs)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Prevent directory listing
+Options -Indexes
+
+# ============================================================
+# Security headers
+# ============================================================
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ============================================================
+# Compression (faster loading)
+# ============================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ============================================================
+# Browser caching
+# ============================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# ============================================================
+# Custom error pages (optional — create these files if needed)
+# ============================================================
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html
+
+# ============================================================
+# Block access to sensitive files
+# ============================================================
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(md|json|lock|log|sql)$">
+  Require all denied
+</FilesMatch>

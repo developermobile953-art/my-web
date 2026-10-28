@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" fill="none" role="img" aria-label="Maosa Tech">
+  <!-- Unique mark: M formed by circuit/code brackets -->
+  <rect x="0" y="0" width="48" height="48" rx="10" fill="#b45309"/>
+  <!-- Stylized M with tech nodes -->
+  <path d="M12 34 V14 L24 28 L36 14 V34" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="12" cy="14" r="2.2" fill="#fde68a"/>
+  <circle cx="36" cy="14" r="2.2" fill="#fde68a"/>
+  <circle cx="24" cy="28" r="2.2" fill="#fde68a"/>
+  <!-- Wordmark -->
+  <text x="58" y="22" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a" letter-spacing="0.8">MAOSA TECH</text>
+  <text x="58" y="38" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#64748b" letter-spacing="0.4">Web &amp; ICT Services</text>
+</svg>

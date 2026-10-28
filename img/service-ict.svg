@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" fill="none" role="img" aria-label="ICT support services">
+  <rect width="400" height="260" rx="16" fill="#0f172a"/>
+  <!-- Server / device stack -->
+  <rect x="80" y="50" width="140" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <circle cx="100" cy="68" r="5" fill="#22c55e"/>
+  <rect x="116" y="62" width="80" height="6" rx="2" fill="#475569"/>
+  <rect x="116" y="72" width="56" height="4" rx="1" fill="#334155"/>
+  
+  <rect x="80" y="96" width="140" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <circle cx="100" cy="114" r="5" fill="#eab308"/>
+  <rect x="116" y="108" width="80" height="6" rx="2" fill="#475569"/>
+  <rect x="116" y="118" width="56" height="4" rx="1" fill="#334155"/>
+  
+  <rect x="80" y="142" width="140" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <circle cx="100" cy="160" r="5" fill="#22c55e"/>
+  <rect x="116" y="154" width="80" height="6" rx="2" fill="#475569"/>
+  <rect x="116" y="164" width="56" height="4" rx="1" fill="#334155"/>
+  
+  <!-- Network / support icon -->
+  <circle cx="300" cy="110" r="48" fill="#1e293b" stroke="#b45309" stroke-width="2"/>
+  <path d="M280 110 h40 M300 90 v40" stroke="#b45309" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="300" cy="110" r="8" fill="#fde68a"/>
+  <path d="M270 130 Q300 155 330 130" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <rect x="260" y="200" width="100" height="28" rx="14" fill="#b45309"/>
+  <text x="310" y="218" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#fff">ICT SUPPORT</text>
+</svg>

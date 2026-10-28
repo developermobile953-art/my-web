@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" fill="none" role="img" aria-label="Web design">
+  <rect width="400" height="260" rx="16" fill="#0f172a"/>
+  <!-- Browser window -->
+  <rect x="50" y="40" width="300" height="180" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <circle cx="72" cy="58" r="5" fill="#ef4444"/>
+  <circle cx="90" cy="58" r="5" fill="#eab308"/>
+  <circle cx="108" cy="58" r="5" fill="#22c55e"/>
+  <rect x="130" y="50" width="180" height="16" rx="8" fill="#0f172a"/>
+  
+  <!-- Layout blocks -->
+  <rect x="70" y="80" width="100" height="12" rx="3" fill="#b45309"/>
+  <rect x="70" y="100" width="160" height="8" rx="2" fill="#475569"/>
+  <rect x="70" y="114" width="140" height="8" rx="2" fill="#334155"/>
+  
+  <rect x="70" y="140" width="80" height="50" rx="6" fill="#0f172a" stroke="#475569"/>
+  <rect x="160" y="140" width="80" height="50" rx="6" fill="#0f172a" stroke="#475569"/>
+  <rect x="250" y="140" width="80" height="50" rx="6" fill="#0f172a" stroke="#b45309"/>
+  
+  <rect x="300" y="20" width="80" height="28" rx="14" fill="#b45309"/>
+  <text x="340" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#fff">DESIGN</text>
+</svg>

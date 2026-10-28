@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none" role="img" aria-label="Maosa Tech Web Services">
+  <!-- Mark -->
+  <rect width="64" height="64" rx="12" fill="#b45309"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700" fill="#ffffff">M</text>
+  
+  <!-- Wordmark (light text for dark backgrounds) -->
+  <text x="80" y="28" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="0.5">MAOSA TECH</text>
+  <text x="80" y="48" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500" fill="#94a3b8" letter-spacing="0.3">Web Services</text>
+</svg>
